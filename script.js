@@ -1,5 +1,15 @@
+var iterations = 1
+
+
 function get_random_image(){
+  var button = document.getElementById("theChosenOne")
+  var text = document.getElementById("counter")
+
+  button.innerHTML = "Next aircraft"
+
   console.log("========(NEW AIRCRAFT)========")
+  console.log("Current iteration: " + iterations)
+  text.innerHTML = iterations + " tested"
 
   //Generate random sky
   sky_min = 1
@@ -23,11 +33,14 @@ function get_random_image(){
       return resp.json()
     })
     .then(function(data){
-      console.log(data[random_index-1])
+      current_aircraft =  data[random_index-1].aircraft
+      console.log("Current aircraft: " + current_aircraft)
 
       document.getElementById('img_box').src = `./Source Images/${random_image}`
       document.getElementById('img_box').title = data[random_index-1].aircraft
     })
+
+  iterations++
 }
 
 
