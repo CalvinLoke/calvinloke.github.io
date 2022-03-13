@@ -4,9 +4,9 @@ body{
     background-size: cover;
 }
 
-.button{
-    width: 20%;
-    height: auto;
+button{
+    width: 100%;
+    font-size: 20px;
 }
 
 img {
@@ -14,5 +14,4 @@ img {
     display: block;
     margin: 25% auto;
     position: relative;
-
 }
