@@ -1,0 +1,18 @@
+body{
+    background-image: url("Source Images/sky_2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.button{
+    width: 20%;
+    height: auto;
+}
+
+img {
+    width: 10%;
+    display: block;
+    margin: 25% auto;
+    position: relative;
+
+}
