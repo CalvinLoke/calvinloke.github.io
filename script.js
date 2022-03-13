@@ -9,7 +9,6 @@ function get_random_image(){
 
   console.log("========(NEW AIRCRAFT)========")
   console.log("Current iteration: " + iterations)
-  text.innerHTML = iterations + " tested"
 
   //Generate random sky
   sky_min = 1
