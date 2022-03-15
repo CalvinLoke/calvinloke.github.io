@@ -19,8 +19,8 @@ function get_random_image(){
   document.body.style.backgroundImage = path_to_sky
 
   // Get random image
-  aircraft_min = 1
-  aircraft_max = 173
+  aircraft_min = 174
+  aircraft_max = 175
 
   random_index = Math.floor(Math.random() * (aircraft_max - aircraft_min + 1) + aircraft_min)
   random_image = "img (" + random_index.toString() + ").png"
